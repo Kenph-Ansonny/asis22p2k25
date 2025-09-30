@@ -7,7 +7,7 @@ using System.Data.Odbc;
 
 namespace CapaModelo_Seguridad
 {
-    class Conexion
+    public class Conexion
     {
         public OdbcConnection conexion()
         {
