@@ -31,10 +31,13 @@ namespace CapaVista_Menu
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.catalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaBitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.identificacionAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,6 +47,7 @@ namespace CapaVista_Menu
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.catalogosToolStripMenuItem,
             this.seguridadToolStripMenuItem,
+            this.ayudaToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -53,9 +57,26 @@ namespace CapaVista_Menu
             // 
             // catalogosToolStripMenuItem
             // 
+            this.catalogosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mantenimientoDepartamentosToolStripMenuItem,
+            this.reporteDepartamentosToolStripMenuItem});
             this.catalogosToolStripMenuItem.Name = "catalogosToolStripMenuItem";
             this.catalogosToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.catalogosToolStripMenuItem.Text = "Catalogos";
+            // 
+            // mantenimientoDepartamentosToolStripMenuItem
+            // 
+            this.mantenimientoDepartamentosToolStripMenuItem.Name = "mantenimientoDepartamentosToolStripMenuItem";
+            this.mantenimientoDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
+            this.mantenimientoDepartamentosToolStripMenuItem.Text = "Mantenimiento Departamentos";
+            this.mantenimientoDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoDepartamentosToolStripMenuItem_Click);
+            // 
+            // reporteDepartamentosToolStripMenuItem
+            // 
+            this.reporteDepartamentosToolStripMenuItem.Name = "reporteDepartamentosToolStripMenuItem";
+            this.reporteDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(300, 26);
+            this.reporteDepartamentosToolStripMenuItem.Text = "Reporte Departamentos";
+            this.reporteDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.reporteDepartamentosToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 
@@ -73,18 +94,26 @@ namespace CapaVista_Menu
             this.consultaBitacoraToolStripMenuItem.Text = "Consulta Bitacora";
             this.consultaBitacoraToolStripMenuItem.Click += new System.EventHandler(this.consultaBitacoraToolStripMenuItem_Click);
             // 
+            // identificacionAlumnoToolStripMenuItem
+            // 
+            this.identificacionAlumnoToolStripMenuItem.Name = "identificacionAlumnoToolStripMenuItem";
+            this.identificacionAlumnoToolStripMenuItem.Size = new System.Drawing.Size(238, 26);
+            this.identificacionAlumnoToolStripMenuItem.Text = "Identificacion Alumno";
+            this.identificacionAlumnoToolStripMenuItem.Click += new System.EventHandler(this.identificacionAlumnoToolStripMenuItem_Click);
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
+            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // identificacionAlumnoToolStripMenuItem
-            // 
-            this.identificacionAlumnoToolStripMenuItem.Name = "identificacionAlumnoToolStripMenuItem";
-            this.identificacionAlumnoToolStripMenuItem.Size = new System.Drawing.Size(238, 26);
-            this.identificacionAlumnoToolStripMenuItem.Text = "Identificacion Alumno";
             // 
             // MenuGeneral
             // 
@@ -111,5 +140,8 @@ namespace CapaVista_Menu
         private System.Windows.Forms.ToolStripMenuItem consultaBitacoraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem identificacionAlumnoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoDepartamentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteDepartamentosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
     }
 }
