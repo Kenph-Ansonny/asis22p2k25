@@ -31,5 +31,33 @@ namespace CapaVista_Menu
             CapaVista_Seguridad.frmBitacora bitacora = new CapaVista_Seguridad.frmBitacora();
             bitacora.ShowDialog();
         }
+
+        private void mantenimientoDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Departamentos frnDepartamentos = new Frm_Departamentos();
+            frnDepartamentos.MdiParent = this;
+            frnDepartamentos.Show();
+        }
+
+        private void reporteDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Reporte reporte = new Reporte();
+            reporte.MdiParent = this;
+            reporte.Show();
+        }
+
+        private void ayudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //cambiar la ruta segun la ubicacion del proyecto
+            string ruta = @"C:\Users\kenph\Documents\Proyectos Analisis de Sistema II\asis22p2k25\ayudas\AyudaSistema.chm";
+            Help.ShowHelp(this, ruta, "MDI.html");
+        }
+
+        private void identificacionAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estudiante estudiante = new Estudiante();   
+            estudiante.MdiParent = this;
+            estudiante.Show();  
+        }
     }
 }
